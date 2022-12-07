@@ -1,0 +1,38 @@
+.round-btn-nav{
+    background-color: #3E709D;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    padding: 0px;
+    color: #fff;
+}
+
+.round-btn-nav:hover{
+    background-color: #223D55;
+    color: #fff;
+}
+
+.round-btn-nav:active{
+    background-color: #223D55;
+    color: #fff;
+    box-shadow: 0px 0px 9px 3px #0086FE;
+}
+
+.btn-search-nav{
+    background-color: #3E709D;
+    font-size: 30px;
+    padding: 0px 20px 0px 20px;
+    color: #fff;
+}
+
+.btn-search-nav:hover{
+    background-color: #223D55;
+    color: #fff;
+}
+
+.btn-search-nav:active{
+    background-color: #223D55;
+    color: #fff;
+    box-shadow: 0px 0px 9px 3px #0086FE;
+}
