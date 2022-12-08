@@ -1,25 +1,26 @@
 .round-btn-nav{
     background-color: #3E709D;
     border-radius: 100%;
-    border: none;
+    padding-top: 5px;
+    text-align: center;
     height: 40px;
     width: 40px;
     font-size: 20px;
-    padding: 0px;
     color: #fff;
     transition: 250ms;
 }
 
-.round-btn-nav-active, .round-btn-nav-active:disabled{
+.round-btn-nav-active, .round-btn-nav-active:hover{
     background-color: #223D55;
-    box-shadow: 0px 0px 9px 3px #0086FE;
-    border: none;
     border-radius: 100%;
+    padding-top: 5px;
+    text-align: center;
     height: 40px;
     width: 40px;
     font-size: 20px;
-    padding: 0px;
     color: #fff;
+    box-shadow: 0px 0px 9px 3px #0086FE;
+
 }
 
 .round-btn-nav:hover{
