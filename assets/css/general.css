@@ -53,13 +53,17 @@
 }
 
 .landing-img{
-    height: 201px;
+    height: calc(38.7vh - 8.1vh);
 }
 
 .cover-img-landing{
     height: 100% !important; 
     width: 100% !important;
     object-fit: cover !important;
+}
+
+.h-device{
+    height: calc(100vh - 8.1vh);
 }
 
 .img-cover{
