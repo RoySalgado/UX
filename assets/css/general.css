@@ -23,12 +23,12 @@
 
 }
 
-.round-btn-nav:hover{
+.round-btn-nav:hover, .btn-edit-user-img:hover{
     background-color: #223D55;
     color: #fff;
 }
 
-.round-btn-nav:active{
+.round-btn-nav:active, .btn-edit-user-img:active{
     background-color: #223D55;
     color: #fff;
     box-shadow: 0px 0px 9px 3px #0086FE;
@@ -93,4 +93,30 @@
 .card-img-cover{
     object-fit: contain;
     height: 150px;
+}
+
+.user-img-container{
+    position: relative;
+}
+
+.user-img{
+    object-fit: cover;
+    width: 416px;
+    height: 416px;
+    border-radius: 100%;
+}
+
+.btn-edit-user-img{
+    background-color: #3E709D;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    transition: 250ms;
 }

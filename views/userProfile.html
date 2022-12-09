@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de productos</title>
+    <!-- #Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- #general styles -->
+    <link rel="stylesheet" href="../assets/css/general.css">
+</head>
+
+<body>
+
+    <!-- #navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./productList.html">
+                <img src="../assets/img/appIcon.png" alt="" width="35" height="35">
+                Venta de productos en línea
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <div class="col mx-5 py-2 d-flex align-items-center"></div>
+                <div class="d-flex">
+                    <a href="./productList.html" role="button" class="round-btn-nav" disabled><i
+                            class="bi bi-house-door-fill"></i></a>
+                    <a role="button" class=" ms-2 round-btn-nav"><i class="bi bi-cart-fill"></i></a>
+                    <a role="button" class=" ms-2 round-btn-nav"><i class="bi bi-envelope-fill"></i></a>
+                    <a href="./userProfile.html" role="button" class=" ms-2 round-btn-nav-active"><i
+                            class="bi bi-person-fill"></i></a>
+                    <a role="button" class=" ms-2 round-btn-nav"><i class="bi bi-broadcast"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- #navbar -->
+
+    <!-- #content -->
+    <div class="container my-5">
+        <!-- #brand -->
+        <h1>Mi perfil</h1>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-12 text-center user-img-container">
+                        <img src="https://static.wikia.nocookie.net/punpun/images/1/15/Punpun_c1p2.PNG" class="user-img"
+                            alt="">
+                        <button class="btn-edit-user-img"><i class="bi bi-pencil-fill"></i></button>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <span class="h2 me-3">UserName</span>
+                        <i class="bi bi-pencil-fill h5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <!-- #personal information -->
+                <div class="card p-2 border-0 shadow">
+                    <div class="card-body">
+                        <!-- #brand -->
+                        <div>
+                            <span class="h3 me-3">Información personal</span>
+                            <i class="bi bi-pencil-fill h5"></i>
+                            <hr>
+                            <div class="row">
+                                <div class="col-4 mb-3">
+                                    <p class="fw-bold h5 mb-3">Nombre(s)</p>
+                                    <span class="h5 fw-light">Diego Araith</span>
+                                </div>
+                                <div class="col-4 mb-3">
+                                    <p class="fw-bold h5 mb-3">Apellido paterno</p>
+                                    <span class="h5 fw-light">Villalobos</span>
+                                </div>
+                                <div class="col-4 mb-3">
+                                    <p class="fw-bold h5 mb-3">Apellido materno</p>
+                                    <span class="h5 fw-light">Hernández</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #brand -->
+
+                        <!-- #brand -->
+                        <div class="mt-4">
+                            <span class="h3 me-3">Domicilio</span>
+                            <i class="bi bi-pencil-fill h5"></i>
+                            <hr>
+                            <div class="row">
+                                <div class="col-4 mb-3">
+                                    <p class="fw-bold h5 mb-3">Calle</p>
+                                    <span class="h5 fw-light">Av. Héroes de Padierna #14</span>
+                                </div>
+                                <div class="col-4 mb-3">
+                                    <p class="fw-bold h5 mb-3">Municipio o región</p>
+                                    <span class="h5 fw-light">Héroes de padierna</span>
+                                </div>
+                                <div class="col-4 mb-3">
+                                    <p class="fw-bold h5 mb-3">Código postal</p>
+                                    <span class="h5 fw-light">45783</span>
+                                </div>
+                                <div class="col-4 mb-3">
+                                    <p class="fw-bold h5 mb-3">Estado</p>
+                                    <span class="h5 fw-light">Morelos</span>
+                                </div>
+                                <div class="col-4 mb-3">
+                                    <p class="fw-bold h5 mb-3">País</p>
+                                    <span class="h5 fw-light">México</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #brand -->
+                    </div>
+                </div>
+                <!-- #personal information -->
+
+                <!-- #credit cards -->
+                <div class="card p-2 mt-5 border-0 shadow">
+                    <div class="card-body">
+                        <!-- #brand -->
+                        <div>
+                            <span class="h3 me-3">Tarjetas de crédito / débito</span>
+                            <i class="bi bi-pencil-fill h5"></i>
+                            <hr>
+                            <div class="row">
+                                <!-- #credit card -->
+                                <div class="col-6">
+                                    <div class="card mb-3 border-0 text-white" style="background-color: rgb(36, 96, 175);">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <span class="h3">BBVA</span>
+                                                </div>
+                                                <div class="col-4 text-end">
+                                                    <img src="../assets/img/cardsLogos/Mastercard-logo.svg.png" height="50" alt="">
+                                                </div>
+                                            </div>
+                                            <pre class="mt-5 h4 text-center">xxxx xxxx xxxx 1001</pre>
+                                            <div class="row">
+                                                <div class="col-9 d-flex align-items-end">
+                                                    <span>Diego Araith Villalobos Hernández</span>
+                                                </div>
+                                                <div class="col-3 text-end">
+                                                    <div class="text-center">
+                                                        <span>Vigencia</span>
+                                                        <span>XX/XX</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- #credit card -->
+
+                                <!-- #credit card -->
+                                <div class="col-6">
+                                    <div class="card mb-3 border-0 text-white" style="background-color: rgb(28, 119, 24);">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <span class="h3">Banco Azteca</span>
+                                                </div>
+                                                <div class="col-4 text-end">
+                                                    <img src="../assets/img/cardsLogos/VISA-Logo-1992.jpg" height="50" alt="">
+                                                </div>
+                                            </div>
+                                            <pre class="mt-5 h4 text-center">xxxx xxxx xxxx 1002</pre>
+                                            <div class="row">
+                                                <div class="col-9 d-flex align-items-end">
+                                                    <span>Miriam Guadalupe Saucedo Bustamante</span>
+                                                </div>
+                                                <div class="col-3 text-end">
+                                                    <div class="text-center">
+                                                        <span>Vigencia</span>
+                                                        <span>XX/XX</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- #credit card -->
+
+                                <!-- #credit card -->
+                                <div class="col-6">
+                                    <div class="card mb-3 border-0 text-white" style="background-color: rgb(12, 55, 121);">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <span class="h3">Banamex</span>
+                                                </div>
+                                                <div class="col-4 text-end">
+                                                    <img src="../assets/img/cardsLogos/Mastercard-logo.svg.png" height="50" alt="">
+                                                </div>
+                                            </div>
+                                            <pre class="mt-5 h4 text-center">xxxx xxxx xxxx 1003</pre>
+                                            <div class="row">
+                                                <div class="col-9 d-flex align-items-end">
+                                                    <span>Diego Araith Villalobos Hernández</span>
+                                                </div>
+                                                <div class="col-3 text-end">
+                                                    <div class="text-center">
+                                                        <span>Vigencia</span>
+                                                        <span>XX/XX</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- #credit card -->
+                            </div>
+                        </div>
+                        <!-- #brand -->
+                    </div>
+                </div>
+                <!-- #credit cards -->
+            </div>
+        </div>
+        <!-- #brand -->
+    </div>
+    <!-- #content -->
+
+    <!-- #scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- #scripts -->
+</body>
+
+</html>
