@@ -89,3 +89,8 @@
     padding-top: 20px;
     padding-left: 50px;
 }
+
+.card-img-cover{
+    object-fit: contain;
+    height: 150px;
+}
