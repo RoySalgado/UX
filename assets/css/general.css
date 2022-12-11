@@ -8,7 +8,7 @@
     font-size: 20px;
     color: #fff;
     transition: 250ms;
-}
+}   
 
 .round-btn-nav-active, .round-btn-nav-active:hover{
     background-color: #223D55;
@@ -94,7 +94,10 @@
     object-fit: contain;
     height: 150px;
 }
-
+.card-img-cover-without{
+    object-fit: contain;
+    height: 100px;
+}
 .user-img-container{
     position: relative;
 }
@@ -119,4 +122,32 @@
     bottom: 30px;
     right: 30px;
     transition: 250ms;
+}
+
+
+.round-btn-inbox-info{
+    background-color: #3E709D;
+    border-radius: 100%;
+    color: #fff;
+}
+.round-btn-inbox-info:hover{
+    background-color: #223D55;
+    border-radius: 100%;
+    color: #fff;
+}
+
+.round-btn-inbox-not{
+    background-color: #3E709D;
+    border-radius: 5%;
+    color: #fff;
+}
+.round-btn-inbox-not:hover{
+    background-color: #223D55;
+    border-radius: 5%;
+    color: #fff;
+}
+
+.box-element{
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

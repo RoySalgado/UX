@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeja de entrada</title>
+    <!-- #Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- #general styles -->
+    <link rel="stylesheet" href="../assets/css/general.css">
+</head>
+
+<body>
+
+    <!-- #navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/img/appIcon.png" alt="" width="35" height="35">
+                Venta de productos en línea
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <div class="col mx-5 py-2 d-flex align-items-center">
+                    <div class="input-group">
+                        <button class="btn btn-search-nav" type="button" id="button-addon1"><i
+                                class="bi bi-filter"></i></button>
+                        <input placeholder="Buscar.." type="text" class="form-control border-end-0" placeholder=""
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <span class="input-group-text bg-white border-start-0" id="basic-addon2"><i
+                                class="bi bi-search"></i></span>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <a role="button" class="round-btn-nav-active" disabled><i class="bi bi-house-door-fill"></i></a>
+                    <a role="button" class=" ms-2 round-btn-nav"><i class="bi bi-cart-fill"></i></a>
+                    <a role="button" class=" ms-2 round-btn-nav"><i class="bi bi-envelope-fill"></i></a>
+                    <a href="./userProfile.html" role="button" class=" ms-2 round-btn-nav"><i
+                            class="bi bi-person-fill"></i></a>
+                    <a role="button" class=" ms-2 round-btn-nav"><i class="bi bi-broadcast"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- #navbar -->
+
+    <!-- #content -->
+    <div class="container my-5">
+        <!-- #brand -->
+        <div class="d-flex justify-content-between">
+            <h2>Bandeja de entrada</h2>
+            <button class="btn round-btn-inbox-not float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                role="button">
+                <i class="bi bi-bell-fill " data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+            </button>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Asunto</th>
+                            <th scope="col">Remitente</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td>Información sobre el paquete</td>
+                            <td>Apple Store</td>
+                            <td>dd/mm/aaaa</td>
+                            <td>
+                                <a role="button" class="btn round-btn-inbox-info"><i
+                                        class="bi bi-envelope-check-fill"></i></a>
+                                <a role="button" class="btn round-btn-inbox-info"><i
+                                        class="bi bi-inbox-fill"></i></a>
+                                <a role="button" class="btn btn-danger" style="border-radius: 100%;"><i
+                                        class="bi bi-trash-fill"></i></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td>Información sobre el paquete</td>
+                            <td>Apple Store</td>
+                            <td>dd/mm/aaaa</td>
+                            <td>
+                                <a role="button" class="btn round-btn-inbox-info"><i
+                                        class="bi bi-envelope-check-fill"></i></a>
+                                <a role="button" class="btn round-btn-inbox-info"><i
+                                        class="bi bi-inbox-fill"></i></a>
+                                <a role="button" class="btn btn-danger" style="border-radius: 100%;"><i
+                                        class="bi bi-trash-fill"></i></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td>Información sobre el paquete</td>
+                            <td>Apple Store</td>
+                            <td>dd/mm/aaaa</td>
+                            <td>
+                                <a role="button" class="btn round-btn-inbox-info"><i
+                                        class="bi bi-envelope-check-fill"></i></a>
+                                <a role="button" class="btn round-btn-inbox-info"><i
+                                        class="bi bi-inbox-fill"></i></a>
+                                <a role="button" class="btn btn-danger" style="border-radius: 100%;"><i
+                                        class="bi bi-trash-fill"></i></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td>Información sobre el paquete</td>
+                            <td>Apple Store</td>
+                            <td>dd/mm/aaaa</td>
+                            <td>
+                                <a role="button" class="btn round-btn-inbox-info"><i
+                                        class="bi bi-envelope-check-fill"></i></a>
+                                <a role="button" class="btn round-btn-inbox-info"><i
+                                        class="bi bi-inbox-fill"></i></a>
+                                <a role="button" class="btn btn-danger" style="border-radius: 100%;"><i
+                                        class="bi bi-trash-fill"></i></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td>Información sobre el paquete</td>
+                            <td>Apple Store</td>
+                            <td>dd/mm/aaaa</td>
+                            <td>
+                                <a role="button" class="btn round-btn-inbox-info"><i
+                                        class="bi bi-envelope-check-fill"></i></a>
+                                <a role="button" class="btn round-btn-inbox-info"><i
+                                        class="bi bi-inbox-fill"></i></a>
+                                <a role="button" class="btn btn-danger" style="border-radius: 100%;"><i
+                                        class="bi bi-trash-fill"></i></a>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- #brand -->
+
+        <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
+            data-bs-backdrop="false">
+            <div class="offcanvas-header">
+                <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas" style="font-size: 20px;">Notificaciones</h6>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body px-0">
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center my-2" id="menu">
+                    <li class="nav-item mx-2 p-1 box-element">
+                        <div class="row">
+                            <div class="col-2" style="position: relative;">
+                                <img src="../assets/img/appIcon.png" style="position: absolute;" class="card-img-cover-without img-fluid" alt="...">
+                            </div>
+                            <div class="col-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">Compra exitosa</h5>
+                                    <p class="card-text text-justify" style="opacity: 0.5;">Tu compra fue realizada correctamente</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center my-2" id="menu">
+                    <li class="nav-item mx-2 p-1 box-element">
+                        <div class="row">
+                            <div class="col-2" style="position: relative;">
+                                <img src="../assets/img/appIcon.png" style="position: absolute;" class="card-img-cover-without img-fluid" alt="...">
+                            </div>
+                            <div class="col-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">Compra exitosa</h5>
+                                    <p class="card-text text-justify" style="opacity: 0.5;">Tu compra fue realizada correctamente</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center my-2" id="menu">
+                    <li class="nav-item mx-2 p-1 box-element">
+                        <div class="row">
+                            <div class="col-2" style="position: relative;">
+                                <img src="../assets/img/appIcon.png" style="position: absolute;" class="card-img-cover-without img-fluid" alt="...">
+                            </div>
+                            <div class="col-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">Compra exitosa</h5>
+                                    <p class="card-text text-justify" style="opacity: 0.5;">Tu compra fue realizada correctamente</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <!-- #content -->
+
+    <!-- #scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- #scripts -->
+</body>
+
+</html>
