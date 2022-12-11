@@ -151,3 +151,25 @@
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.left-side{
+    background-image: url("../assets/img/muebles-interior.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.white-text{
+    color: white;
+}
+
+.chat-icon{
+    background-color: #3E709D;
+    border-radius: 100%;
+    padding-top: 5px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    color: #fff;
+}
