@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "affair": "Información sobre el paquete",
+        "sender": "Apple Store",
+        "date": "11/12/2022"
+    },
+    {
+        "id": "2",
+        "affair": "Información sobre el paquete",
+        "sender": "Huawei Store",
+        "date": "10/12/2022"
+    },
+    {
+        "id": "3",
+        "affair": "Información sobre el paquete",
+        "sender": "Xiaomi Store",
+        "date": "09/12/2022"
+    },
+    {
+        "id": "4",
+        "affair": "Información sobre el paquete",
+        "sender": "Honor Store",
+        "date": "05/12/2022"
+    }
+]
