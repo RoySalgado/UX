@@ -273,3 +273,10 @@ input[type="radio"] {
     margin-right: 5px;
 }
 
+.img-tumbnail{
+    border: 2px dashed #c0c0c0;
+    color: #c0c0c0;
+    border-radius: 5px;
+    height: 300px;
+}
+
