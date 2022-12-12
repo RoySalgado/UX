@@ -31,9 +31,9 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="col mx-5 py-2 d-flex align-items-center"></div>
-        <div class="d-flex">
+        <div class="d-flex text-end">
           <a href="../productList.html" role="button" class="round-btn-nav" disabled><i
               class="bi bi-house-door-fill"></i></a>
         </div>
@@ -45,10 +45,10 @@
   <!-- #content -->
   <div class="container my-5">
     <div class="row d-flex align-items-center">
-      <div class="col-6">
+      <div class="col-12 col-lg-6">
         <h2>Estadísticas</h2>
       </div>
-      <div class="col-6 text-end">
+      <div class="col-12 col-lg-6 text-lg-end">
         <a class="btn btn-primary" target="_blank" href=".././../403/index.html">403</a>
         <a class="btn btn-primary" target="_blank" href=".././../404/index.html">404</a>
         <a class="btn btn-primary" target="_blank" href=".././../500/index.html">500</a>
@@ -58,8 +58,8 @@
     <hr>
 
     <!-- #principal tabs -->
-    <div class="row row-cols-2 row-cols-md-4">
-      <div class="col">
+    <div class="row">
+      <div class="col-12 col-lg-6 col-xl-3 mb-3">
         <div class="card border-0  rounded-4 shadow h-60">
           <div class="card-body">
             <h4 class="card-title pricing-card-title ">Ganancias</h4>
@@ -68,7 +68,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-12 col-lg-6 col-xl-3 mb-3">
         <div class="card border-0  rounded-4 shadow h-60">
           <div class="card-body">
             <h4 class="card-title pricing-card-title ">Ventas</h4>
@@ -77,7 +77,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="ccol-12 col-lg-6 col-xl-3 mb-3">
         <div class="card border-0  rounded-4 shadow h-60">
           <div class="card-body">
             <h4 class="card-title pricing-card-title ">Pérdidas</h4>
@@ -86,7 +86,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-12 col-lg-6 col-xl-3 mb-3">
         <div class="card border-0  rounded-3 shadow h-60">
           <div class="card-body">
             <h4 class="card-title pricing-card-title">Total</h4>
@@ -101,7 +101,7 @@
     <div class="row row-cols-2 row-cols-md-2 mt-3">
 
       <!-- #principal sheet -->
-      <div class="col-8">
+      <div class="col-12 col-lg-8">
         <div class="card border-0  rounded-4 shadow h-60">
           <div class="card-body">
             <h4 class="card-title pricing-card-title ">Resultados Enero-Mayo</h4>
@@ -153,7 +153,7 @@
       <!-- #principal sheet -->
 
       <!-- #wizzard -->
-      <div class="col-4">
+      <div class="col-12 col-lg-4">
         <div class="card border-0 rounded-3 shadow">
           <div class="card-body">
             <div class="contenedor">
@@ -205,7 +205,7 @@
             <h4>Registrar nuevo producto</h4>
             <hr>
             <div class="row">
-              <div class="col-7">
+              <div class="col-12 col-lg-7">
                 <div class="row">
                   <div class="col-7">
                     <div class="form-group">
@@ -288,7 +288,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-5">
+              <div class="col-12 col-lg-5">
                 Imagen del producto
                 <div class="img-tumbnail d-flex align-items-center justify-content-center">
                   <h1><i class="bi bi-image-fill"></i></h1>
@@ -318,7 +318,7 @@
             <hr>
             <form name="validate">
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                   <div class="form-group">
                     <div class="input-group mb-3">
                       <input placeholder="Nombre" type="text" ng-model="val.input1"
@@ -335,7 +335,7 @@
                   </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                   <div class="form-group">
                     <div class="input-group mb-3">
                       <input placeholder="Correo electronico" type="email" ng-model="val.input2"
@@ -353,7 +353,7 @@
                   </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                   <div class="form-group">
                     <div class="input-group mb-3">
                       <input placeholder="Contraseña" type="password" ng-model="val.input3"
@@ -371,7 +371,7 @@
                   </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                   <div class="form-group">
                     <div class="input-group mb-3">
                       <input placeholder="Confirmar contraseña" type="password" ng-model="val.input4"
@@ -389,7 +389,7 @@
                   </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                   <div class="form-group">
                     <div class="input-group mb-3">
                       <input placeholder="Cantidad" type="number" min="0" ng-model="val.input5"
@@ -407,7 +407,7 @@
                   </div>
                 </div>
 
-                <div class="col-6 d-flex flex-row">
+                <div class="col-12 col-lg-6 d-flex flex-row">
                   <div class="form-group d-flex align-items-center me-3">
                     <input type="checkbox" class="form-check-input" style="width: 25px; height: 25px;">
                     <span class="ms-1">Check box</span>
