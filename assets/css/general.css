@@ -34,6 +34,52 @@
     box-shadow: 0px 0px 9px 3px #0086FE;
 }
 
+button.round-btn-danger{
+    background-color: #d84747;
+    border: none;
+    border-radius: 100%;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    color: #fff;
+    transition: 250ms;
+}
+
+button.round-btn-danger:hover{
+    background-color: #7a1b1b;
+    color: #fff;
+}
+
+button.round-btn-danger:active{
+    background-color: #7a1b1b;
+    color: #fff;
+    box-shadow: 0px 0px 9px 3px #f64949;
+}
+
+button.round-btn-primary{
+    background-color: #3E709D;
+    border: none;
+    border-radius: 100%;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    color: #fff;
+    transition: 250ms;
+}
+
+button.round-btn-primary:hover{
+    background-color: #223D55;
+    color: #fff;
+}
+
+button.round-btn-primary:active{
+    background-color: #223D55;
+    color: #fff;
+    box-shadow: 0px 0px 9px 3px #0086FE;
+}
+
 .btn-search-nav{
     background-color: #3E709D;
     font-size: 30px;
