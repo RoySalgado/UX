@@ -1,0 +1,69 @@
+#oro{
+    background: linear-gradient(to right, #D4AF37 ,rgb(230, 233, 84),#efb810);
+}
+
+:root {
+	--fondo: #f2f2f2;
+	--color-wizard: #c9c9c9;
+	--wizard-active: #1ee628;
+	--wizard-active-border: #549857;
+}
+
+
+
+
+aside .lista {
+	list-style: none;
+	border-left: 2px solid var(--color-wizard);
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+aside .lista li {
+	position: relative;
+}
+
+aside .lista li a {
+	display: block;
+	color: #5a5a5a;
+	padding: 15px 10px;
+	text-decoration: none;
+	transition: .3s ease all;
+}
+
+aside .lista li.activo a,
+aside .lista li a:hover {
+	color: #000;
+}
+
+aside .lista li::before {
+	content: "";
+	display: block;
+	height: 12px;
+	width: 12px;
+	background: var(--fondo);
+	border: 2px solid var(--color-wizard);
+	position: absolute;
+	left: -17px;
+	top: calc(50% - 6px);
+	transform: rotate(45deg);
+	transition: .3s ease all;
+}
+
+aside .lista li.activo::before {
+	background: var(--wizard-active);
+	border: 2px solid var(--wizard-active-border);
+}
+
+aside .lista li:hover::before {
+	border: 2px solid var(--wizard-active-border);
+}
+
+
+@media screen and (max-width: 700px){
+
+
+	aside {
+		margin-bottom: 40px;
+	}
+}
