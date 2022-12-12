@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product details</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
     <!-- #Bootstrap -->
     <link rel="stylesheet" href="../assets/css/boostrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
@@ -40,21 +42,11 @@
                 <div class="d-flex">
                     <a href="./productList.html" role="button" class="ms-2 round-btn-nav" disabled><i
                             class="bi bi-house-door-fill"></i></a>
-                    <a href="./shoppingCart.html" role="button" class=" ms-2 round-btn-nav"><i class="bi bi-cart-fill"></i></a>
+                    <a role="button" class=" ms-2 round-btn-nav"><i class="bi bi-cart-fill"></i></a>
                     <a href="./inbox.html" role="button" class=" ms-2 round-btn-nav"><i
                             class="bi bi-envelope-fill"></i></a>
-                    <div class="dropdown">
-                        <button data-bs-toggle="dropdown" role="button" class="ms-2 round-btn-primary"><i
-                                class="bi bi-person-fill ps/0"></i></button>
-                        <ul class="mt-2 dropdown-menu dropdown-menu-end" id="userMenu"
-                            aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="./userProfile.html">Mi perfil</a></li>
-                            <li><a href="./login.html" class="dropdown-item text-danger">Cerrar sesión</a></li>
-                            <hr class="my-1 mx-2">
-                            <li><a href="./pricing.html" class="dropdown-item">Ver planes</a></li>
-                            <li><a class="dropdown-item" href="./admin/dashboard.html">Administrador</a></li>
-                        </ul>
-                    </div>
+                    <a href="./userProfile.html" role="button" class=" ms-2 round-btn-nav"><i
+                            class="bi bi-person-fill"></i></a>
                     <a role="button" class=" ms-2 round-btn-nav"><i class="bi bi-broadcast"></i></a>
                 </div>
             </div>
@@ -125,7 +117,7 @@
                             </label>
                         </div>
                         <div class="radio-inline">
-                            <input type="radio" name="colores" id="color5" value="5">
+                            <input type="radio" name="colores" id="color5" value="5"> 
                             <label for="color5">
                                 <button class="btn col-12 select-color" style="background-color: #3F6033;"></button>
                             </label>
@@ -168,19 +160,22 @@
                     <span id="select-capacity">
                         <label class="group-radio">
                             <div>
-                                <input type="radio" value="1" name="capacity" required>
+                                <input type="radio" value="1" name="capacity"
+                                    required>
                                 <button class="btn col-12 select-model">64 GB</button>
                             </div>
                         </label>
                         <label class="group-radio">
                             <div>
-                                <input type="radio" value="2" name="capacity" required>
+                                <input type="radio" value="2" name="capacity"
+                                    required>
                                 <button class="btn col-12 select-model">128 GB</button>
                             </div>
                         </label>
                         <label class="group-radio">
                             <div>
-                                <input type="radio" value="3" name="capacity" required>
+                                <input type="radio" value="3" name="capacity"
+                                    required>
                                 <button class="btn col-12 select-model">256 GB</button>
                             </div>
                         </label>
@@ -202,8 +197,8 @@
                             </select>
                             <button class="mt-5 btn btn-primary col-12">Comprar
                                 ahora</button>
-                            <a class="btn btn-outline-primary mt-3 col-12" ng-click="addProduct()">Agregar al
-                                carrito</a>
+                            <a class="btn btn-outline-primary mt-3 col-12"
+                                ng-click="addProduct()">Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -237,10 +232,10 @@
                         <span ng-bind="'$'+product.price"></span>
                         <div class="d-flex flex-row">
                             <i class="bi bi-star-fill text-warning me-1"></i>
-                            <i class="bi bi-star-fill text-warning me-1"></i>
-                            <i class="bi bi-star-fill text-warning me-1"></i>
-                            <i class="bi bi-star-fill text-warning me-1"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning me-1"></i>
+                        <i class="bi bi-star-fill text-warning me-1"></i>
+                        <i class="bi bi-star-fill text-warning me-1"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
                         </div>
                     </div>
                 </div>
@@ -254,8 +249,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
     <script src="../js/ajsProduct.js"></script>
     <!-- #scripts -->
 </body>
