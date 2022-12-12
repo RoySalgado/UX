@@ -2549,7 +2549,7 @@ textarea.form-control-lg {
 .form-check-input:focus {
     border-color: #86b7fe;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(31, 143, 27, 0.541)
+    box-shadow: 0 0 0 .25rem rgba(95, 255, 89, 0.541);
 }
 
 .form-check-input:checked {

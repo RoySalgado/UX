@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="../../assets/img/appIcon.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
-
     <!-- #Bootstrap -->
     <link rel="stylesheet" href="../assets/css/boostrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
@@ -44,12 +43,23 @@
                 <div class="d-flex">
                     <a href="./productList.html" role="button" class="ms-2 round-btn-nav" disabled><i
                             class="bi bi-house-door-fill"></i></a>
-                    <a role="button" class=" ms-2 round-btn-nav"><i class="bi bi-cart-fill"></i></a>
+                    <a href="./shoppingCart.html" role="button" class=" ms-2 round-btn-nav"><i
+                            class="bi bi-cart-fill"></i></a>
                     <a href="./inbox.html" role="button" class=" ms-2 round-btn-nav"><i
                             class="bi bi-envelope-fill"></i></a>
-                    <a href="./userProfile.html" role="button" class=" ms-2 round-btn-nav"><i
-                            class="bi bi-person-fill"></i></a>
-                    <a role="button" class=" ms-2 round-btn-nav"><i class="bi bi-broadcast"></i></a>
+                    <div class="dropdown">
+                        <button data-bs-toggle="dropdown" role="button" class="ms-2 round-btn-primary"><i
+                                class="bi bi-person-fill ps/0"></i></button>
+                        <ul class="mt-2 dropdown-menu dropdown-menu-end" id="userMenu"
+                            aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="./userProfile.html">Mi perfil</a></li>
+                            <li><a href="./login.html" class="dropdown-item text-danger">Cerrar sesión</a></li>
+                            <hr class="my-1 mx-2">
+                            <li><a href="./pricing.html" class="dropdown-item">Ver planes</a></li>
+                            <li><a class="dropdown-item" href="./admin/dashboard.html">Administrador</a></li>
+                        </ul>
+                    </div>
+                    <a role="button" class=" ms-2 round-btn-nav" href="#chatOffCanvas" data-bs-toggle="offcanvas"><i class="bi bi-broadcast"></i></a>
                 </div>
             </div>
         </div>
@@ -167,8 +177,7 @@
                             <span style="color: green">DISPONIBLE</span><br><br>
                             <span>Unidades:</span>
                             <input type="number" value="1" class="form-control" style="width: 60px;">
-                            <button class="mt-3 btn btn-primary col-12">Comprar
-                                ahora</button>
+                            <button class="mt-3 btn btn-primary col-12">Comprar ahora</button>
                             <a class="btn btn-outline-primary mt-3 col-12" ng-click="addProduct()">Agregar al
                                 carrito</a>
                         </div>
@@ -216,6 +225,186 @@
         <!-- #brand -->
     </div>
     <!-- #content -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link" ng-class="{'active': !showTab, '': showTab}"
+                                    ng-click="paymentTab(0)">Métodos de pago</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-class="{'active': showTab, '': !showTab}"
+                                    ng-click="paymentTab(1)">Añadir nueva tarjeta</a>
+                            </li>
+                        </ul>
+
+                        <div class="mt-4" ng-if="!showTab">
+                            <p>Seleccione un método de pago</p>
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="card mb-3 border-0 shadow">
+                                        <div class="card-body">
+                                            <input class="form-check-input" type="radio" name="" id="" />
+                                            <label class="ms-3" for="">**** **** **** 0369 </label>
+                                            <i class="fa fa-credit-card"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 border-0 shadow">
+                                        <div class="card-body">
+                                            <input class="form-check-input" type="radio" name="" id="" />
+                                            <label class="ms-3" for="">**** **** **** 1307 </label>
+                                            <i class="fa fa-credit-card"></i>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 border-0 shadow">
+                                        <div class="card-body">
+                                            <input class="form-check-input" type="radio" name="" id="" />
+                                            <label class="ms-3" for="">Stripe </label>
+                                            <i class="fa fa-cc-stripe"></i>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 border-0 shadow">
+                                        <div class="card-body">
+                                            <input class="form-check-input" type="radio" name="" id="" />
+                                            <label class="ms-3" for="">PayPal </label>
+                                            <i class="fa fa-cc-paypal"></i>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 border-0 shadow">
+                                        <div class="card-body">
+                                            <input class="form-check-input" type="radio" name="" id="" />
+                                            <label class="ms-3" for="">Mercado Pago </label>
+                                            <i class="fa fa-credit-card"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card border-0 shadow">
+                                        <div class="card-body">
+                                            <span>Sub Total:</span><br />
+                                            <span>$ 13,000.00</span>
+                                            <p></p>
+                                            <span>IVA: </span><br />
+                                            <span>$ 2,080.00</span><br />
+                                            <hr>
+                                            <p></p>
+                                            <span>Total:</span><br />
+                                            <strong style="font-size: 20px">$ 15,080.00</strong>
+                                            
+                                            <div class="d-grid gap-2">
+                                                <button type="button" class="mt-3 btn btn-primary">
+                                                    Realizar compra
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div ng-if="showTab">
+                            <div class="row g-3">
+                                <p></p>
+                                <div class="col">
+                                    <h6>Número de tarjeta</h6>
+                                    <input type="text" class="form-control" placeholder="**** **** **** ****"
+                                        aria-label="" />
+
+                                </div>
+                                <div class="col">
+                                    <h6>Titular de la tarjeta</h6>
+                                    <input type="text" class="form-control" placeholder="Nombre completo"
+                                        aria-label="" />
+                                </div>
+                            </div>
+                            <div class="row g-3 col-md-12">
+                                <p></p>
+                                <div class="col">
+                                    <h6>MM</h6>
+                                    <input type="text" class="form-control" placeholder="" aria-label="" />
+                                </div>
+                                <div class="col">
+                                    <h6>YY</h6>
+                                    <input type="text" class="form-control" placeholder="" aria-label="" />
+                                </div>
+                                <div class="col">
+                                    <h6>CVV</h6>
+                                    <input type="text" class="form-control" placeholder="" aria-label="" />
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <p></p>
+                                <div class="col">
+                                    <div>
+                                        <input class="form-check-input" type="radio" name="" id="" />
+                                        <label class="ms-3" for="">Guardar esta tarjeta para futuras compras</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h6 style="color: #3E709D;">Tu información de pago está segura con nosotros</h6>
+                                </div>
+                                <hr>
+                            </div>
+                            <p></p>
+                            <div class="" style="text-align: end;">
+                                <button type="button" class="btn btn-primary"></button>
+                                    Confirmar y añadir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- #offcanvas chat -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="chatOffCanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="offcanvasExampleLabel">Servicio de atención al cliente</h4>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row">
+        <div class="col-12 mb-3">
+          <div class="d-flex flex-row">
+            <div class="chat-icon"><i class="bi bi-question-lg"></i></div>
+            <div class="alert alert-primary col-9 mx-3 shadow">¡Saludos estimado cliente!</div>
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <div class="d-flex flex-row">
+            <div class="chat-icon"><i class="bi bi-question-lg"></i></div>
+            <div class="alert alert-primary col-9 mx-3 shadow">Este tiene como función ayudar a los clientes y aclarar
+              las dudas que los mismos puedan tener. </div>
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <div class="d-flex flex-row">
+            <div class="chat-icon"><i class="bi bi-question-lg"></i></div>
+            <div class="alert alert-primary col-9 mx-3 shadow">¿En que puedo ayudarte?</div>
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <div class="d-flex flex-row-reverse align-items-start">
+            <div class="chat-icon"><i class="bi bi-person-fill"></i></div>
+            <div class="col-9 mx-3 card border-0 shadow">
+              <div class="card-body">
+                <input type="text" class="form-control border-0" placeholder="Escribe algo..">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #offcanvas chat -->
 
     <!-- #scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
