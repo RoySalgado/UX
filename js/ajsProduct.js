@@ -1,51 +1,39 @@
 let aplication = angular.module("products", ['ngRoute'])
 
 aplication.controller("productController", function ($scope, $http) {
-    $scope.url = "http://127.0.0.1:5500/resources/"
+    $scope.url = "http://127.0.0.1:5501/"
     $scope.products = []
     $scope.productsSell = []
     $scope.productImage = "https://http2.mlstatic.com/D_NQ_NP_732242-MLA48035610306_102021-O.jpg"
 
     $http({
         method: 'GET',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        url: $scope.url+"products.json"
+        url: $scope.url+"resources/products.json"
     }).then(function successCallback(response) {
-        console.log(response);
         $scope.products = response.data.productList
     }, function errorCallback(response) {
-        console.log("aaa");
+        console.log(response);
     });
         
     $scope.getProducts= () => {
         $http({
             method: 'GET',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            url: $scope.url+"products.json"
+            url: $scope.url+"resources/products.json"
         }).then(function successCallback(response) {
-            console.log(response);
             $scope.products = response.data.productList
         }, function errorCallback(response) {
-            console.log("aaa");
+            console.log(response);
         });
     };
 
     $scope.getProductsSell= () => {
         $http({
             method: 'GET',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            url: $scope.url+"productsSell.json"
+            url: $scope.url+"resources/productsSell.json"
         }).then(function successCallback(response) {
-            console.log(response);
             $scope.productsSell = response.data.productList
         }, function errorCallback(response) {
-            console.log("aaa");
+            console.log(response);
         });
     };
 
@@ -62,7 +50,7 @@ aplication.controller("productController", function ($scope, $http) {
     }
 
     $scope.details= () => {
-        window.location.href = "http://127.0.0.1:5500/views/productDetails.html" ;
+        window.location.href =  $scope.url+"views/productDetails.html" ;
     };
 
 });

@@ -49,7 +49,7 @@
         <a class="btn btn-primary" target="_blank" href=".././../403/index.html">403</a>
         <a class="btn btn-primary" target="_blank" href=".././../404/index.html">404</a>
         <a class="btn btn-primary" target="_blank" href=".././../500/index.html">500</a>
-        <a class="btn btn-primary" target="_blank" href="./forms.html">Campos y validaciones</a>
+        <a class="btn btn-primary" href="#validaciones" data-bs-toggle="modal">Campos y validaciones</a>
       </div>
     </div>
     <hr>
@@ -277,7 +277,7 @@
                       <div class="input-group mb-3">
                         <input placeholder="Tipo, ej: modelo" type="text"
                           class="form-control border-top-0 border-start-0 border-end-1 border-2" name="" id="">
-                          <input placeholder="Dato" type="text"
+                        <input placeholder="Dato" type="text"
                           class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
                         <button class="btn btn-primary">Agregar</button>
                       </div>
@@ -286,7 +286,7 @@
                 </div>
               </div>
               <div class="col-5">
-                Imagen del producto 
+                Imagen del producto
                 <div class="img-tumbnail d-flex align-items-center justify-content-center">
                   <h1><i class="bi bi-image-fill"></i></h1>
                 </div>
@@ -297,6 +297,109 @@
                 <button class="btn btn-primary">Registrar</button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #Modal -->
+
+  <!-- #Modal VALIDACIONES -->
+  <div class="modal fade" id="validaciones" data-bs-toggle="modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="card border-0">
+          <div class="card-body">
+            <h4>Validaciones</h4>
+            <hr>
+            <form id="formValidations" novalidate>
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input placeholder="Correo" type="email" ng-model="email" required
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2">
+                      <span
+                        class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
+                        id="basic-addon2"><i class="bi bi-envelope-fill"></i></span>
+                    </div>
+                    <span style="color: #D62828;" ng-show="email.!dirty">El email es requerido</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input placeholder="Contraseña" type="text"
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
+                      <span
+                        class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
+                        id="basic-addon2"><i class="bi bi-key-fill"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input placeholder="Nombre" type="text"
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
+                      <span
+                        class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
+                        id="basic-addon2"><i class="bi bi-pencil-fill"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input placeholder="Código" type="text"
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
+                      <span
+                        class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
+                        id="basic-addon2"><i class="bi bi-upc"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input placeholder="Marca" type="text"
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
+                      <span
+                        class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
+                        id="basic-addon2"><small><i class="bi bi-bookmark-fill"></i></small></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input placeholder="Precio" type="text"
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
+                      <span
+                        class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
+                        id="basic-addon2"><small><i class="bi bi-currency-dollar"></i></small></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input placeholder="Unidades" type="number"
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
+                      <span
+                        class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
+                        id="basic-addon2"><small><i class="bi bi-boxes"></i></small></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-3 text-end">
+                  <hr>
+                  <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button class="btn btn-primary" type="submit">Registrar</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
