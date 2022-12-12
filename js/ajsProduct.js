@@ -1,10 +1,17 @@
 let aplication = angular.module("products", ['ngRoute'])
 
 aplication.controller("productController", function ($scope, $http) {
-    $scope.url = "http://127.0.0.1:5501/"
+    $scope.url = "http://127.0.0.1:5500/"
     $scope.products = []
     $scope.productsSell = []
     $scope.productImage = "https://http2.mlstatic.com/D_NQ_NP_732242-MLA48035610306_102021-O.jpg"
+
+    //metodo del modal
+    $scope.showTab = false;
+
+    $scope.paymentTab = tab => {
+        $scope.showTab = !(tab === 0); 
+    }
 
     $http({
         method: 'GET',

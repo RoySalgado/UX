@@ -9,9 +9,6 @@
 	--wizard-active-border: #549857;
 }
 
-
-
-
 aside .lista {
 	list-style: none;
 	border-left: 2px solid var(--color-wizard);

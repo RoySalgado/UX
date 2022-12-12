@@ -176,10 +176,9 @@
                             <h3>$13,000.00</h3>
                             <span style="color: green">DISPONIBLE</span><br><br>
                             <span>Unidades:</span>
-                            <input type="number" value="1" class="form-control" style="width: 60px;">
-                            <button class="mt-3 btn btn-primary col-12">Comprar ahora</button>
-                            <a class="btn btn-outline-primary mt-3 col-12" ng-click="addProduct()">Agregar al
-                                carrito</a>
+                            <input type="number" value="1" min="1" class="form-control border-top-0 border-end-0 border-start-0 border-bottom-2" style="width: 60px;">
+                            <button class="mt-3 btn btn-primary col-12" data-bs-target="#paymentModal" data-bs-toggle="modal">Comprar ahora</button>
+                            <a class="btn btn-outline-primary mt-3 col-12" ng-click="addProduct()">Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -248,36 +247,36 @@
                             <div class="row">
                                 <div class="col-8">
                                     <div class="card mb-3 border-0 shadow">
-                                        <div class="card-body">
-                                            <input class="form-check-input" type="radio" name="" id="" />
+                                        <div class="card-body d-flex align-items-center">
+                                            <input name="paymentMethod" id="paymentMethod" class="form-check-input" type="radio" name="" id="" />
                                             <label class="ms-3" for="">**** **** **** 0369 </label>
                                             <i class="fa fa-credit-card"></i></p>
                                         </div>
                                     </div>
                                     <div class="card mb-3 border-0 shadow">
-                                        <div class="card-body">
-                                            <input class="form-check-input" type="radio" name="" id="" />
+                                        <div class="card-body d-flex align-items-center">
+                                            <input name="paymentMethod" id="paymentMethod" class="form-check-input" type="radio" name="" id="" />
                                             <label class="ms-3" for="">**** **** **** 1307 </label>
                                             <i class="fa fa-credit-card"></i>
                                         </div>
                                     </div>
                                     <div class="card mb-3 border-0 shadow">
-                                        <div class="card-body">
-                                            <input class="form-check-input" type="radio" name="" id="" />
+                                        <div class="card-body d-flex align-items-center">
+                                            <input name="paymentMethod" id="paymentMethod" class="form-check-input" type="radio" name="" id="" />
                                             <label class="ms-3" for="">Stripe </label>
                                             <i class="fa fa-cc-stripe"></i>
                                         </div>
                                     </div>
                                     <div class="card mb-3 border-0 shadow">
-                                        <div class="card-body">
-                                            <input class="form-check-input" type="radio" name="" id="" />
+                                        <div class="card-body d-flex align-items-center">
+                                            <input name="paymentMethod" id="paymentMethod" class="form-check-input" type="radio" name="" id="" />
                                             <label class="ms-3" for="">PayPal </label>
                                             <i class="fa fa-cc-paypal"></i>
                                         </div>
                                     </div>
                                     <div class="card mb-3 border-0 shadow">
-                                        <div class="card-body">
-                                            <input class="form-check-input" type="radio" name="" id="" />
+                                        <div class="card-body d-flex align-items-center">
+                                            <input name="paymentMethod" id="paymentMethod" class="form-check-input" type="radio" name="" id="" />
                                             <label class="ms-3" for="">Mercado Pago </label>
                                             <i class="fa fa-credit-card"></i>
                                         </div>
@@ -300,6 +299,9 @@
                                                 <button type="button" class="mt-3 btn btn-primary">
                                                     Realizar compra
                                                 </button>
+                                                <button type="button" class="mt-1 btn btn-outline-primary" data-bs-dismiss="modal">
+                                                    Cancelar
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -312,13 +314,13 @@
                                 <p></p>
                                 <div class="col">
                                     <h6>Número de tarjeta</h6>
-                                    <input type="text" class="form-control" placeholder="**** **** **** ****"
+                                    <input type="text" class="form-control border-top-0 border-end-0 border-start-0 border-bottom-2" placeholder="**** **** **** ****"
                                         aria-label="" />
 
                                 </div>
                                 <div class="col">
                                     <h6>Titular de la tarjeta</h6>
-                                    <input type="text" class="form-control" placeholder="Nombre completo"
+                                    <input type="text" class="form-control border-top-0 border-end-0 border-start-0 border-bottom-2" placeholder="Nombre completo"
                                         aria-label="" />
                                 </div>
                             </div>
@@ -326,21 +328,21 @@
                                 <p></p>
                                 <div class="col">
                                     <h6>MM</h6>
-                                    <input type="text" class="form-control" placeholder="" aria-label="" />
+                                    <input type="text" class="form-control border-top-0 border-end-0 border-start-0 border-bottom-2" placeholder="" aria-label="" />
                                 </div>
                                 <div class="col">
                                     <h6>YY</h6>
-                                    <input type="text" class="form-control" placeholder="" aria-label="" />
+                                    <input type="text" class="form-control border-top-0 border-end-0 border-start-0 border-bottom-2" placeholder="" aria-label="" />
                                 </div>
                                 <div class="col">
                                     <h6>CVV</h6>
-                                    <input type="text" class="form-control" placeholder="" aria-label="" />
+                                    <input type="text" class="form-control border-top-0 border-end-0 border-start-0 border-bottom-2" placeholder="" aria-label="" />
                                 </div>
                             </div>
                             <div class="row g-3">
                                 <p></p>
                                 <div class="col">
-                                    <div>
+                                    <div class="d-flex align-items-center">
                                         <input class="form-check-input" type="radio" name="" id="" />
                                         <label class="ms-3" for="">Guardar esta tarjeta para futuras compras</label>
                                     </div>
@@ -350,11 +352,9 @@
                                 </div>
                                 <hr>
                             </div>
-                            <p></p>
                             <div class="" style="text-align: end;">
-                                <button type="button" class="btn btn-primary"></button>
-                                    Confirmar y añadir
-                                </button>
+                                <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Confirmar y añadir</button>
                             </div>
                         </div>
                     </div>
