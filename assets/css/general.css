@@ -278,7 +278,7 @@ input[type="radio"]:checked~span {
     border-width: 2px;
 }
 
-input[type="radio"] {
+input[type="radio"].radio-hide {
     display: none;
 }
 
