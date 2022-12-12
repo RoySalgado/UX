@@ -34,8 +34,9 @@
       <div class="navbar-collapse" id="navbarSupportedContent">
         <div class="col mx-5 py-2 d-flex align-items-center"></div>
         <div class="d-flex">
-          <a href="../productList.html" role="button" class="round-btn-nav" disabled><i class="bi bi-house-door-fill"></i></a>
-      </div>
+          <a href="../productList.html" role="button" class="round-btn-nav" disabled><i
+              class="bi bi-house-door-fill"></i></a>
+        </div>
       </div>
     </div>
   </nav>
@@ -44,7 +45,9 @@
   <!-- #content -->
   <div class="container my-5">
     <div class="row d-flex align-items-center">
-      <div class="col-6"><h2>Estadísticas</h2></div>
+      <div class="col-6">
+        <h2>Estadísticas</h2>
+      </div>
       <div class="col-6 text-end">
         <a class="btn btn-primary" target="_blank" href=".././../403/index.html">403</a>
         <a class="btn btn-primary" target="_blank" href=".././../404/index.html">404</a>
@@ -313,91 +316,113 @@
           <div class="card-body">
             <h4>Validaciones</h4>
             <hr>
-            <form id="formValidations" novalidate>
+            <form name="validate">
               <div class="row">
                 <div class="col-6">
                   <div class="form-group">
                     <div class="input-group mb-3">
-                      <input placeholder="Correo" type="email" ng-model="email" required
-                        class="form-control border-top-0 border-start-0 border-end-0 border-2">
-                      <span
-                        class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
-                        id="basic-addon2"><i class="bi bi-envelope-fill"></i></span>
-                    </div>
-                    <span style="color: #D62828;" ng-show="email.!dirty">El email es requerido</span>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="form-group">
-                    <div class="input-group mb-3">
-                      <input placeholder="Contraseña" type="text"
-                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
-                      <span
-                        class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
-                        id="basic-addon2"><i class="bi bi-key-fill"></i></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-7">
-                  <div class="form-group">
-                    <div class="input-group mb-3">
-                      <input placeholder="Nombre" type="text"
-                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
+                      <input placeholder="Nombre" type="text" ng-model="val.input1"
+                        ng-class="{'is-valid': validate.input1.$dirty, 'is-invalid': !validate.input1.$dirty && validate.input1.$touched || val.input1 === ''}"
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="input1"
+                        id="input1">
                       <span
                         class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
                         id="basic-addon2"><i class="bi bi-pencil-fill"></i></span>
                     </div>
+                    <span class="text-danger mt-0"
+                      ng-if="!validate.input1.$dirty && validate.input1.$touched || val.input1 === ''">Este campo no
+                      puede estar vacío</span>
                   </div>
                 </div>
-                <div class="col-5">
+
+                <div class="col-6">
                   <div class="form-group">
                     <div class="input-group mb-3">
-                      <input placeholder="Código" type="text"
-                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
+                      <input placeholder="Correo electronico" type="email" ng-model="val.input2"
+                        ng-class="{'is-valid': validate.input2.$dirty && validate.input2.$valid, 'is-invalid': !validate.input2.$dirty && validate.input2.$touched || val.input2 === '' || validate.input2.$invalid}"
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="input2"
+                        id="input2">
                       <span
                         class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
-                        id="basic-addon2"><i class="bi bi-upc"></i></span>
+                        id="basic-addon2"><i class="bi bi-pencil-fill"></i></span>
                     </div>
+                    <span class="text-danger mt-0"
+                      ng-if="!validate.input2.$dirty && validate.input2.$touched || val.input2 === ''">Este campo no
+                      puede estar vacío</span>
+                    <span class="text-danger mt-0" ng-if="validate.input2.$dirty && validate.input2.$invalid">Ingrese un correo válido</span>
                   </div>
                 </div>
-                <div class="col-4">
+
+                <div class="col-6">
                   <div class="form-group">
                     <div class="input-group mb-3">
-                      <input placeholder="Marca" type="text"
-                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
+                      <input placeholder="Contraseña" type="password" ng-model="val.input3"
+                        ng-class="{'is-valid': validate.input3.$dirty && validate.input3.$valid, 'is-invalid': !validate.input3.$dirty && validate.input3.$touched || val.input3 === '' || val.input3 !== val.input4}"
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="input3"
+                        id="input3">
                       <span
                         class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
-                        id="basic-addon2"><small><i class="bi bi-bookmark-fill"></i></small></span>
+                        id="basic-addon2"><i class="bi bi-pencil-fill"></i></span>
                     </div>
+                    <span class="text-danger mt-0"
+                      ng-if="!validate.input3.$dirty && validate.input3.$touched || val.input3 === ''">Este campo no
+                      puede estar vacío</span>
+                      <span class="text-danger" ng-if="validate.input3.$dirty && val.input3 !== val.input4">Las contraseñas no coinciden</span>
                   </div>
                 </div>
-                <div class="col-4">
+
+                <div class="col-6">
                   <div class="form-group">
                     <div class="input-group mb-3">
-                      <input placeholder="Precio" type="text"
-                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
+                      <input placeholder="Confirmar contraseña" type="password" ng-model="val.input4"
+                        ng-class="{'is-valid': validate.input4.$dirty && validate.input4.$valid, 'is-invalid': !validate.input4.$dirty && validate.input4.$touched || val.input4 === '' || val.input3 !== val.input4}"
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="input4"
+                        id="input4">
                       <span
                         class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
-                        id="basic-addon2"><small><i class="bi bi-currency-dollar"></i></small></span>
+                        id="basic-addon2"><i class="bi bi-pencil-fill"></i></span>
                     </div>
+                    <span class="text-danger mt-0"
+                      ng-if="!validate.input4.$dirty && validate.input4.$touched || val.input4 === ''">Este campo no
+                      puede estar vacío</span>
+                      <span class="text-danger" ng-show="validate.input3.$dirty && val.input3 !== val.input4">Las contraseñas no coinciden</span>
                   </div>
                 </div>
-                <div class="col-4">
+
+                <div class="col-6">
                   <div class="form-group">
                     <div class="input-group mb-3">
-                      <input placeholder="Unidades" type="number"
-                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="" id="">
+                      <input placeholder="Cantidad" type="number" min="0" ng-model="val.input5"
+                        ng-class="{'is-valid': validate.input5.$dirty && validate.input5.$valid, 'is-invalid': !validate.input5.$dirty && validate.input5.$touched ||validate.input5.$invalid}"
+                        class="form-control border-top-0 border-start-0 border-end-0 border-2" name="input5"
+                        id="input5">
                       <span
                         class="input-group-text text-secondary border-top-0 border-start-0 border-end-0 border-2 bg-white fs-4"
-                        id="basic-addon2"><small><i class="bi bi-boxes"></i></small></span>
+                        id="basic-addon2"><i class="bi bi-pencil-fill"></i></span>
                     </div>
+                    <span class="text-danger mt-0"
+                      ng-if="!validate.input5.$dirty && validate.input5.$touched || val.input5 === ''">Este campo no
+                      puede estar vacío</span>
+                      <span class="text-danger" ng-if="validate.input5.$invalid">El valor no puede ser menor a 0</span>
                   </div>
                 </div>
-                <div class="col-12 mt-3 text-end">
-                  <hr>
-                  <button class="btn btn-outline-primary" data-bs-dismiss="modal">Cancelar</button>
-                  <button class="btn btn-primary" type="submit">Registrar</button>
+
+                <div class="col-6 d-flex flex-row">
+                  <div class="form-group d-flex align-items-center me-3">
+                    <input type="checkbox" class="form-check-input" style="width: 25px; height: 25px;">
+                    <span class="ms-1">Check box</span>
+                  </div>
+
+                  <div class="form-group d-flex align-items-center">
+                    <input type="radio" class="form-check-input">
+                    <span class="ms-1">Radio button</span>
+                  </div>
                 </div>
+
+                <div class="col-12 text-end">
+                  <button class="btn btn-outline-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
               </div>
             </form>
           </div>
