@@ -206,7 +206,8 @@ button.round-btn-primary:active{
 
 .box-element{
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
 }
 
 .left-side{
@@ -273,3 +274,6 @@ input[type="radio"] {
     margin-right: 5px;
 }
 
+.border-b{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+}
