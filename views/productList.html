@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de productos</title>
+    <link rel="shortcut icon" href="../assets/img/appIcon.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
     <!-- #Bootstrap -->
@@ -48,7 +49,10 @@
                         <button data-bs-toggle="dropdown" role="button" class="ms-2 round-btn-primary"><i class="bi bi-person-fill ps/0"></i></button>
                         <ul class="mt-2 dropdown-menu dropdown-menu-end" id="userMenu" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href="./userProfile.html">Mi perfil</a></li>
-                            <li><a href="./login.html" class="dropdown-item text-danger" href="#">Cerrar sesión</a></li>
+                            <li><a href="./login.html" class="dropdown-item text-danger">Cerrar sesión</a></li>
+                            <hr class="my-1 mx-2">
+                            <li><a href="./pricing.html" class="dropdown-item">Ver planes</a></li>
+                            <li><a class="dropdown-item" href="./admin/dashboard.html">Administrador</a></li>
                         </ul>
                     </div>
                     <a role="button" class=" ms-2 round-btn-nav" href="#chatOffCanvas" data-bs-toggle="offcanvas"><i class="bi bi-broadcast"></i></a>
