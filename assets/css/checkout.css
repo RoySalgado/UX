@@ -1,0 +1,80 @@
+.textoCkecout{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-img-cover2{
+    object-fit: contain;
+    height: 210px;
+
+}
+
+.marginChek{
+    margin-right: 40px;
+}
+.marginChek2{
+    margin-right: 20px;
+   
+}
+.colorCheck{
+    height:40px;
+    width:40px;
+    border-radius:10px;
+    background-color: #2fab6d;
+    margin-left: 13px;
+    border:2px solid #7bbbf5;
+}
+.colorCheck2{
+    height:40px;
+    width:40px;
+    border-radius:10px;
+    background-color: grey;
+    margin-left: 13px;
+    border:2px solid #7bbbf5;
+}
+.modeloCkeck{
+    height:40px;
+    width:80px;
+    border-radius:10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #7bbbf5;
+}
+
+.marginCard{
+    margin-top: 30px;
+}
+.borderCard{
+    border-radius: 12px;
+}
+.bottomRadius{
+    border-radius: 13px;
+}
+.shadowImage{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 12px;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+
+
+/* estilo modal */
+.cardColor{
+    background-color: #3E709D;
+    color: white;
+}
+
+.addImage{
+    border:1px solid black;
+    /* margin-left: 55px; */
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+}
+
+.chechar{
+    border:1px solid black;
+}
