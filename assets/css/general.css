@@ -3,8 +3,8 @@
     border-radius: 100%;
     padding-top: 5px;
     text-align: center;
-    height: 40px;
-    width: 40px;
+    height: 40px !important;
+    width: 40px !important;
     font-size: 20px;
     color: #fff;
     transition: 250ms;
@@ -15,12 +15,11 @@
     border-radius: 100%;
     padding-top: 5px;
     text-align: center;
-    height: 40px;
-    width: 40px;
+    height: 40px !important;
+    width: 40px !important  ;
     font-size: 20px;
     color: #fff;
     box-shadow: 0px 0px 9px 3px #0086FE;
-
 }
 
 .round-btn-nav:hover, .btn-edit-user-img:hover{
@@ -67,6 +66,18 @@ button.round-btn-primary{
     font-size: 20px;
     color: #fff;
     transition: 250ms;
+}
+
+button.round-btn-primary-active{
+    background-color: #223D55;
+    border: none;
+    border-radius: 100%;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0px 0px 9px 3px #0086FE;
 }
 
 button.round-btn-primary:hover{
