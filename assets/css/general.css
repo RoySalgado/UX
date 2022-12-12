@@ -186,11 +186,21 @@ button.round-btn-primary:active{
     background-color: #3E709D;
     border-radius: 100%;
     color: #fff;
+    text-align: center;
+    font-size: 20px;
+    transition: 250ms;
 }
+
 .round-btn-inbox-info:hover{
     background-color: #223D55;
     border-radius: 100%;
     color: #fff;
+    text-align: center;
+    font-size: 20px;
+    transition: 250ms;
+}
+.font-20{
+    font-size: 20px;
 }
 
 .round-btn-inbox-not{
