@@ -1,0 +1,220 @@
+{
+    "message": "Successful",
+    "productList": [
+        {
+            "id": 1,
+            "image": "https://http2.mlstatic.com/D_NQ_NP_732242-MLA48035610306_102021-O.jpg",
+            "images": [
+                {
+                    "id": 1,
+                    "url": "https://shopmxstore.com/wp-content/uploads/2022/11/2022-iphone13-mini-colors.png"
+                }
+            ],
+            "name": "iPhone 13",
+            "price": "13,000.00",
+            "description": "Teléfono iPhone 13",
+            "status": 1,
+            "rating": 5,
+            "no_ratings": 10,
+            "colors": [
+                {
+                    "id": 1,
+                    "color": "ffff"
+                }
+            ],
+            "modelo": [
+                {
+                    "id": 1,
+                    "nombre": "Defecto"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Pro"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Pro Max"
+                },
+                {
+                    "id": 4,
+                    "nombre": "Mini"
+                }
+            ],
+            "capacidad": [
+                {
+                    "id": 1,
+                    "nombre": 64
+                },
+                {
+                    "id": 2,
+                    "nombre": 128
+                },
+                {
+                    "id": 3,
+                    "nombre": 256
+                }
+            ]
+
+        },
+        {
+            "id": 2,
+            "image": "https://m.media-amazon.com/images/I/81a-vuydLTL.jpg",
+            "image2": "",
+            "name": "iPad Pro",
+            "price": "16,000.00",
+            "description": "Teléfono iPhone 12",
+            "status": 1,
+            "rating": 5,
+            "no_ratings": 10,
+            "colors": [
+                {
+                    "id": 1,
+                    "color": "ffff"
+                }
+            ],
+            "modelo": [
+                {
+                    "id": 1,
+                    "nombre": "Defecto"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Pro"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Pro Max"
+                },
+                {
+                    "id": 4,
+                    "nombre": "Mini"
+                }
+            ],
+            "capacidad": [
+                {
+                    "id": 1,
+                    "nombre": 64
+                },
+                {
+                    "id": 2,
+                    "nombre": 128
+                },
+                {
+                    "id": 3,
+                    "nombre": 256
+                }
+            ]
+
+        },
+        {
+            "id": 3,
+            "image": "https://http2.mlstatic.com/D_NQ_NP_688442-MLA44305891989_122020-W.jpg",
+            "images": [
+                {
+                    "id": 1,
+                    "url": "https://shopmxstore.com/wp-content/uploads/2022/11/2022-iphone13-mini-colors.png"
+                }
+            ],
+            "name": "Auriculares",
+            "price": "10,000.00",
+            "description": "Teléfono iPhone 13",
+            "status": 1,
+            "rating": 5,
+            "no_ratings": 10,
+            "colors": [
+                {
+                    "id": 1,
+                    "color": "ffff"
+                }
+            ],
+            "modelo": [
+                {
+                    "id": 1,
+                    "nombre": "Defecto"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Pro"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Pro Max"
+                },
+                {
+                    "id": 4,
+                    "nombre": "Mini"
+                }
+            ],
+            "capacidad": [
+                {
+                    "id": 1,
+                    "nombre": 64
+                },
+                {
+                    "id": 2,
+                    "nombre": 128
+                },
+                {
+                    "id": 3,
+                    "nombre": 256
+                }
+            ]
+
+        },
+        {
+            "id": 4,
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-spacegray-select-202206?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1664497359481",
+            "images": [
+                {
+                    "id": 1,
+                    "url": "https://shopmxstore.com/wp-content/uploads/2022/11/2022-iphone13-mini-colors.png"
+                }
+            ],
+            "name": "MacBook Pro M2",
+            "price": "10,000.00",
+            "description": "Teléfono iPhone 13",
+            "status": 1,
+            "rating": 5,
+            "no_ratings": 10,
+            "colors": [
+                {
+                    "id": 1,
+                    "color": "ffff"
+                }
+            ],
+            "modelo": [
+                {
+                    "id": 1,
+                    "nombre": "Defecto"
+                },
+                {
+                    "id": 2,
+                    "nombre": "Pro"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Pro Max"
+                },
+                {
+                    "id": 4,
+                    "nombre": "Mini"
+                }
+            ],
+            "capacidad": [
+                {
+                    "id": 1,
+                    "nombre": 64
+                },
+                {
+                    "id": 2,
+                    "nombre": 128
+                },
+                {
+                    "id": 3,
+                    "nombre": 256
+                }
+            ]
+
+        }
+    ]
+}

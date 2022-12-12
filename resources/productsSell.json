@@ -1,0 +1,47 @@
+{
+    "message": "Successful",
+    "productList": [
+        {
+            "id": 1,
+            "image": "https://http2.mlstatic.com/D_NQ_NP_643730-MLA43703742343_102020-O.jpg",
+            "name": "iPhone 7 Plus",
+            "price": "6,000.00",
+            "description": "Teléfono iPhone 13",
+            "status": 1,
+            "rating": 5,
+            "no_ratings": 10
+        },
+        {
+            "id": 2,
+            "image": "https://m.media-amazon.com/images/I/51w1csySD4L._AC_SX522_.jpg",
+            "image2": "",
+            "name": "iPhone 8 Plus",
+            "price": "16,000.00",
+            "description": "Teléfono iPhone 12",
+            "status": 1,
+            "rating": 5,
+            "no_ratings": 10
+        },
+        {
+            "id": 3,
+            "image": "https://m.media-amazon.com/images/I/61A0Zu4K-TL.jpg",
+            "name": "iPhone SE",
+            "price": "10,000.00",
+            "description": "Teléfono iPhone 13",
+            "status": 1,
+            "rating": 5,
+            "no_ratings": 10
+        },
+        {
+            "id": 4,
+            "image": "https://http2.mlstatic.com/D_NQ_NP_853579-MLA46154933449_052021-O.jpg",
+            "name": "iPhone 12",
+            "price": "10,000.00",
+            "description": "Teléfono iPhone 13",
+            "status": 1,
+            "rating": 5,
+            "no_ratings": 10
+        }
+        
+    ]
+}
