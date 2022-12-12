@@ -213,7 +213,8 @@ button.round-btn-primary:active {
 
 .box-element {
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
 }
 
 .left-side {
@@ -280,3 +281,14 @@ input[type="radio"]:checked~span {
 input[type="radio"] {
     display: none;
 }
+
+.border-b{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+}
+.img-tumbnail{
+    border: 2px dashed #c0c0c0;
+    color: #c0c0c0;
+    border-radius: 5px;
+    height: 300px;
+}
+

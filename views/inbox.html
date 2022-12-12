@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../assets/css/general.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
-    
+
 </head>
 
 <body ng-controller="inboxController" ng-init="getAll()">
@@ -42,12 +42,16 @@
                     </div>
                 </div>
                 <div class="d-flex">
-                    <a href="./productList.html" role="button" class="round-btn-nav" disabled><i class="bi bi-house-door-fill"></i></a>
+                    <a href="./productList.html" role="button" class="round-btn-nav" disabled><i
+                            class="bi bi-house-door-fill"></i></a>
                     <a href="#" role="button" class=" ms-2 round-btn-nav"><i class="bi bi-cart-fill"></i></a>
-                    <a href="./inbox.html" role="button" class=" ms-2 round-btn-nav-active"><i class="bi bi-envelope-fill"></i></a>
+                    <a href="./inbox.html" role="button" class=" ms-2 round-btn-nav-active"><i
+                            class="bi bi-envelope-fill"></i></a>
                     <div class="dropdown">
-                        <button data-bs-toggle="dropdown" role="button" class="ms-2 round-btn-primary"><i class="bi bi-person-fill ps/0"></i></button>
-                        <ul class="mt-2 dropdown-menu dropdown-menu-end" id="userMenu" aria-labelledby="dropdownMenuButton1">
+                        <button data-bs-toggle="dropdown" role="button" class="ms-2 round-btn-primary"><i
+                                class="bi bi-person-fill ps/0"></i></button>
+                        <ul class="mt-2 dropdown-menu dropdown-menu-end" id="userMenu"
+                            aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href="./userProfile.html">Mi perfil</a></li>
                             <li><a href="./login.html" class="dropdown-item text-danger" href="#">Cerrar sesión</a></li>
                         </ul>
@@ -66,70 +70,107 @@
             <h2>Bandeja de entrada</h2>
             <button class="btn round-btn-inbox-not float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
                 role="button">
+
                 <i class="bi bi-bell-fill " data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+                Notificaciones
             </button>
         </div>
 
         <hr>
         <div class="row">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Asunto</th>
-                            <th scope="col">Remitente</th>
-                            <th scope="col">Fecha</th>
-                            <th scope="col">Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr ng-repeat="inbox in inbox">
-                            <td>
-                                <div class="form-check d-flex justify-content-center">
-                                    <input class="form-check-input" type="checkbox">
-                                </div>
-                            </td>
-                            <td ng-bind="inbox.affair">Información sobre el paquete</td>
-                            <td ng-bind="inbox.sender">Apple Store</td>
-                            <td ng-bind="inbox.date">dd/mm/aaaa</td>
-                            <td>
-                                <a role="button" class="btn round-btn-inbox-info"><i
-                                        class="bi bi-envelope-check-fill"></i></a>
-                                <a role="button" class="btn round-btn-inbox-info"><i class="bi bi-inbox-fill"></i></a>
-                                <a role="button" class="btn btn-danger" ng-click="delInbox(inbox.id)" style="border-radius: 100%;"><i
-                                        class="bi bi-trash-fill"></i></a>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <ul class="nav xnav-pills flex-column ">
+                            <li class="nav-item active my-1 border-b" >
+                                <a href="#" class="nav-link">
+                                    <i class="bi bi-inbox-fill"></i>    Recibidos
+                                    <span class="badge bg-primary float-right">4</span>
+                                </a>
+                            </li>
+                            <li class="nav-item my-1 border-b">
+                                <a href="#" class="nav-link">
+                                    <i class="bi bi-send-fill"></i> Enviados
+                                </a>
+                            </li>
+                            <li class="nav-item my-1 border-b">
+                                <a href="#" class="nav-link">
+                                    <i class="bi bi-easel-fill"></i> Borradores
+                                </a>
+                            </li>
+                            <li class="nav-item my-1 border-b  ">
+                                <a href="#" class="nav-link">
+                                    <i class="bi bi-trash-fill"></i> Eliminados
+                                    <span class="badge bg-warning float-right">65</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                            </td>
-                        </tr>
-
-
-                    </tbody>
-                </table>
+                </div>
             </div>
+            <div class="col-md-10">
+                <div class="table-responsive">
+                    <table class="table table-hover ">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Asunto</th>
+                                <th scope="col">Remitente</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="inbox in inbox">
+                                <td>
+                                    <div class="form-check d-flex justify-content-center">
+                                        <input class="form-check-input" type="checkbox">
+                                    </div>
+                                </td>
+                                <td ng-bind="inbox.affair">Información sobre el paquete</td>
+                                <td ng-bind="inbox.sender">Apple Store</td>
+                                <td ng-bind="inbox.date">dd/mm/aaaa</td>
+                                <td>
+                                    <a role="button" class="btn round-btn-inbox-info"><i
+                                            class="bi bi-envelope-check-fill"></i></a>
+                                    <a role="button" class="btn round-btn-inbox-info"><i
+                                            class="bi bi-inbox-fill"></i></a>
+                                    <a role="button" class="btn btn-danger" ng-click="delInbox(inbox.id)"
+                                        style="border-radius: 100%;"><i class="bi bi-trash-fill"></i></a>
+
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
         <!-- #brand -->
 
         <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
             data-bs-backdrop="false">
             <div class="offcanvas-header">
-                <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas" style="font-size: 20px;">Notificaciones
+                <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas" style="font-size: 30px;">Notificaciones
                 </h6>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body px-0">
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center my-2" id="menu">
-                    <li class="nav-item mx-2 p-1 box-element" ng-repeat="notification in notifications">
+            <div class="offcanvas-body">
+                <ul class="nav nav-pills flex-column" id="menu">
+                    <li class="nav-item box-element my-1 " ng-repeat="notification in notifications">
                         <div class="row">
-                            <div class="col-2" style="position: relative;">
-                                <img src="../assets/img/appIcon.png" style="position: absolute;"
-                                    class="card-img-cover-without img-fluid" alt="...">
+                            <div class="col-2 col-sm-3">
+                                <img src="../assets/img/appIcon.png" class="img-fluid card-img-cover-without" alt="...">
                             </div>
-                            <div class="col-10">
+                            <div class="col-10 col-sm-9">
                                 <div class="card-body">
                                     <h5 class="card-title" ng-bind="notification.title"></h5>
-                                    <p class="card-text text-justify" style="opacity: 0.5;" ng-bind="notification.subtitle"></p>
+                                    <p class="card-text text-justify" style="opacity: 0.5;"
+                                        ng-bind="notification.subtitle"></p>
                                 </div>
                             </div>
                         </div>
@@ -139,6 +180,8 @@
             </div>
         </div>
     </div>
+
+    
     <!-- #content -->
 
     <!-- #scripts -->
